@@ -1,31 +1,34 @@
 
 package model;
 
-public class Employee {
+public class Employees {
     
    private int EmployeeID;
    private String FirstName;
    private String LastName;
    private String Email;
    private String OfficeLocation;
-   private int Phone;
+   private String Phone;
+   private int YearsOfExperience;
    
-    public Employee() {
+    public Employees() {
         this.EmployeeID = 0;
         this.FirstName = "";
         this.LastName = "";
         this.Email = "";
         this.OfficeLocation = "";
-        this.Phone = 0;
+        this.Phone = "";
+        this.YearsOfExperience = 0;
     }
 
-    public Employee(int EmployeeID, String FirstName, String LastName, String Email, String OfficeLocation, int Phone) {
+    public Employees(int EmployeeID, String FirstName, String LastName, String Email, String OfficeLocation, String Phone, int YearsOfExperience) {
         this.EmployeeID = EmployeeID;
         this.FirstName = FirstName;
         this.LastName = LastName;
         this.Email = Email;
         this.OfficeLocation = OfficeLocation;
         this.Phone = Phone;
+        this.YearsOfExperience = YearsOfExperience;
     }
 
     public int getEmployeeID() {
@@ -68,18 +71,31 @@ public class Employee {
         this.OfficeLocation = OfficeLocation;
     }
 
-    public int getPhone() {
+    public String getPhone() {
         return Phone;
     }
 
-    public void setPhone(int Phone) {
+    public void setPhone(String Phone) {
         this.Phone = Phone;
+    }
+
+    public int getYearsOfExperience() {
+        return YearsOfExperience;
+    }
+
+    public void setYearsOfExperience(int YearsOfExperience) {
+        this.YearsOfExperience = YearsOfExperience;
     }
 
     @Override
     public String toString() {
-        return "Employee{" + "EmployeeID=" + EmployeeID + ", FirstName=" + FirstName + ", LastName=" + LastName + ", Email=" + Email + ", OfficeLocation=" + OfficeLocation + ", Phone=" + Phone + '}';
+        return "Employees{" + "EmployeeID=" + EmployeeID + ", FirstName=" + FirstName + ", LastName=" + LastName + ", Email=" + Email + ", OfficeLocation=" + OfficeLocation + ", Phone=" + Phone + ", YearsOfExperience=" + YearsOfExperience + '}';
     }
+    
+
+
+
+
 
     
    
