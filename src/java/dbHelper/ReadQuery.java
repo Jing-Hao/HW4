@@ -69,7 +69,40 @@ public class ReadQuery {
         String table = "";
 
         table += "<table border=1>";
+   
+                table += "<tr>";
 
+                table += "<td>";
+                table += "Employee ID";
+                table += "</td>";
+
+                table += "<td>";
+                table += "First Name";
+                table += "</td>";
+
+                table += "<td>";
+                table += "Last Name";
+                table += "</td>";
+
+                table += "<td>";
+                table += "Email";
+                table += "</td>";
+
+                table += "<td>";
+                table += "Office Location";
+                table += "</td>";
+
+                table += "<td>";
+                table += "Phone";
+                table += "</td>";
+
+                table += "<td>";
+                table += "Years Of Experience";
+                table += "</td>";
+                
+                table += "</tr>";
+        
+        
         try {
             while (this.results.next()) {
 
