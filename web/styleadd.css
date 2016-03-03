@@ -1,0 +1,37 @@
+body{
+    background-color: #D2B48C;
+}
+
+#addheader{
+    width: 25%;
+    text-align: center;
+    margin: auto auto;
+    padding: 15px;
+    background-color: yellow;
+    color: #696969;
+    border: 10px white solid;
+}
+
+#addForm{
+    width: 25%;
+    text-align: center;
+    margin: auto auto;
+    background-color: #F08080;
+    color:white;
+    padding: 15px;
+    border: 10px white solid;
+}
+
+table{
+    border-collapse: collapse;
+    width:100%;
+}
+
+table tr, td{
+    padding:15px;
+    border: 1px white solid;
+}
+
+#botton{
+    padding-top: 20px;
+}
