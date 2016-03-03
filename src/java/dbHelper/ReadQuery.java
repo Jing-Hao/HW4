@@ -68,37 +68,37 @@ public class ReadQuery {
 
         String table = "";
 
-        table += "<table border=1>";
+        table += "<table>";
    
                 table += "<tr>";
 
-                table += "<td>";
+                table += "<th>";
                 table += "Employee ID";
-                table += "</td>";
+                table += "</th>";
 
-                table += "<td>";
+                table += "<th>";
                 table += "First Name";
-                table += "</td>";
+                table += "</th>";
 
-                table += "<td>";
+                table += "<th>";
                 table += "Last Name";
-                table += "</td>";
+                table += "</th>";
 
-                table += "<td>";
+                table += "<th>";
                 table += "Email";
-                table += "</td>";
+                table += "</th>";
 
-                table += "<td>";
+                table += "<th>";
                 table += "Office Location";
-                table += "</td>";
+                table += "</th>";
 
-                table += "<td>";
+                table += "<th>";
                 table += "Phone";
-                table += "</td>";
+                table += "</th>";
 
-                table += "<td>";
+                table += "<th>";
                 table += "Years Of Experience";
-                table += "</td>";
+                table += "</th>";
                 
                 table += "</tr>";
         

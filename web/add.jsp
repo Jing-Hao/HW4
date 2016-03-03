@@ -4,32 +4,40 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Add A New Employee</title>
+        <link rel="stylesheet" type="text/css" href="style.css" media="screen">
     </head>
     <body>
-        <h1>Add A New Employee</h1>
+        <h1 id="addheader">Add A New Employee</h1>
         
     <form name="addForm" action="addEmployee" method="get">
         
-        <label>First Name:</label>
-        <input type="text" name="firstname" value="" />
+        <div id="add">
+        
+        <label class="label">First Name:</label>
+        <input class="input" type="text" name="firstname" value="" />
         <br>
-        <label>Last Name:</label>
-        <input type="text" name="lastname" value="" />
+        <label class="label">Last Name:</label>
+        <input class="input" type="text" name="lastname" value="" />
         <br>
-        <label>Email:</label>
-        <input type="text" name="email" value="" />
+        <label class="label">Email:</label>
+        <input class="input" type="text" name="email" value="" />
         <br>
-        <label>Office Location:</label>
-        <input type="text" name="officelocation" value="" />
+        <label class="label">Office Location:</label>
+        <input class="input" type="text" name="officelocation" value="" />
         <br>
-        <label>Phone:</label>
-        <input type="text" name="Phone" value="" />
+        <label class="label">Phone:</label>
+        <input class="input" type="text" name="Phone" value="" />
         <br>
-        <label>Years of Experience:</label>
-        <input type="text" name="yearsofexperience" value="" />
+        <label class="label">Years of Experience:</label>
+        <input class="input" type="text" name="yearsofexperience" value="" />
         <br>
+        
+        </div>
+        
+        <div id="botton">
         <input type="reset" name="clear" value="Clear"/>
         <input type="submit" name="submit" value="Submit"/>
+        </div>
         
     </form>    
     </body>
