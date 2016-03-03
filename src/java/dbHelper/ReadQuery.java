@@ -145,6 +145,10 @@ public class ReadQuery {
                 table += employee.getYearsOfExperience();
                 table += "</td>";
                 
+                table += "<td>";
+                table += "<a href=delete?employeeID=" + employee.getEmployeeID() + "> Delete </a>";
+                table += "</td>";
+                
                 table += "</tr>";
 
             }

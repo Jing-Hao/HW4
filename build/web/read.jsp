@@ -11,5 +11,10 @@
     <body>
         <h1>Employee Information</h1>
         <%= table%>
+        
+        <br><br>
+        
+        <a href ="add">Add A New Employee</a>
+        
     </body>
 
