@@ -29,8 +29,12 @@
                     </tr>
                     <tr>
                         <td>Office Location:</td>
+                        <td><input type="text" name="officelocation" value=""></td>
+                    </tr>   
+                    <tr>
+                        <td>Phone:</td>
                         <td><input type="text" name="phone" value=""></td>
-                    </tr>    
+                    </tr>   
                     <tr>
                         <td>Years of Experience:</td>
                         <td><input type="text" name="yearsofexperience" value=""></td>
