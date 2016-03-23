@@ -19,7 +19,7 @@
                 <tbody>
                     <tr>
                         <td>Employee ID:</td>
-                        <td><input type="text" name="employeeID" value="<%= employee.getEmployeeID() %>" /></td>
+                        <td><input type="text" name="employeeID" value="<%= employee.getEmployeeID() %>" readonly /></td>
                     </tr>
                     <tr>
                         <td>First Name:</td>
