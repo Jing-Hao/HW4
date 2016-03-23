@@ -12,24 +12,24 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import model.Employees;
 
-public class ReadQuery {
-
+public class SearchQuery {
+    
     private Connection conn;
     private ResultSet results;
-
-    public ReadQuery() {
-
+    
+    public SearchQuery(){
+        
         Properties props = new Properties();
         InputStream instr = getClass().getResourceAsStream("dbConn.properties");
         try {
             props.load(instr);
         } catch (IOException ex) {
-            Logger.getLogger(ReadQuery.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(SearchQuery.class.getName()).log(Level.SEVERE, null, ex);
         }
         try {
             instr.close();
         } catch (IOException ex) {
-            Logger.getLogger(ReadQuery.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(SearchQuery.class.getName()).log(Level.SEVERE, null, ex);
         }
 
         String driver = props.getProperty("driver.name");
@@ -39,31 +39,30 @@ public class ReadQuery {
         try {
             Class.forName(driver);
         } catch (ClassNotFoundException ex) {
-            Logger.getLogger(ReadQuery.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(SearchQuery.class.getName()).log(Level.SEVERE, null, ex);
         }
         try {
             conn = DriverManager.getConnection(url, username, passwd);
         } catch (SQLException ex) {
-            Logger.getLogger(ReadQuery.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(SearchQuery.class.getName()).log(Level.SEVERE, null, ex);
         }
-
+        
     }
-
-    public void doRead() {
-
+    
+    public void doSearch (String firstName){
+        
         try {
-            String query = "Select * from employee ORDER BY employeeID ASC";
-
-            PreparedStatement ps = conn.prepareStatement(query);
-
-            this.results = ps.executeQuery();
+            String query = "SELECT * FROM employee WHERE UPPER(firstName) LIKE ?";
             
+            PreparedStatement ps = conn.prepareStatement (query);
+            ps.setString(1, "%" + firstName.toUpperCase() + "%");
+            this.results = ps.executeQuery();
         } catch (SQLException ex) {
-            Logger.getLogger(ReadQuery.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(SearchQuery.class.getName()).log(Level.SEVERE, null, ex);
         }
-
+        
     }
-
+    
     public String getHTMLtable() {
 
         String table = "";
@@ -157,7 +156,7 @@ public class ReadQuery {
 
             }
         } catch (SQLException ex) {
-            Logger.getLogger(ReadQuery.class.getName()).log(Level.SEVERE, null, ex);
+            Logger.getLogger(SearchQuery.class.getName()).log(Level.SEVERE, null, ex);
         }
 
         table += "</table>";
@@ -165,4 +164,5 @@ public class ReadQuery {
         return table;
 
     }
+    
 }

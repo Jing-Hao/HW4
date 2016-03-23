@@ -8,6 +8,8 @@
     <body>
         <h1>Employee Datebase</h1>
         <a href="read">View All Employee Information</a>
+        <br> <br>
+        <a href="search.jsp">Search Employees</a>
     </body>
 </html>
 

@@ -20,5 +20,9 @@
         
         <a href ="add"><p style="text-align:center">Add A New Employee</p></a>
         
+        <br> <br>
+        
+        <a href="search.jsp"><p style="text-align: center">Search Employees</p></a>
+        
     </body>
 
