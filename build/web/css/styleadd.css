@@ -1,0 +1,59 @@
+body{
+    background-color: #D2B48C;
+}
+
+#addheader{
+    width: 25%;
+    text-align: center;
+    margin: auto auto;
+    padding: 15px;
+    background-color: #FFFF99;
+    color: #696969;
+    border: 10px white solid;
+}
+
+#addForm{
+    width: 25%;
+    text-align: center;
+    margin: auto auto;
+    background-color: #F08080;
+    color:white;
+    padding: 15px;
+    border: 10px white solid;
+}
+
+#inputTable{
+    border-collapse: collapse;
+    width:100%;
+}
+
+.input{
+    padding:15px;
+    border: 1px white solid;
+}
+
+#botton{
+    padding-top: 20px;
+}
+
+#updateheader{
+    width: 25%;
+    text-align: center;
+    margin: auto auto;
+    padding: 15px;
+    background-color: #FFFF99;
+    color: #696969;
+    border: 10px white solid;
+}
+
+#updateForm{
+    width: 25%;
+    text-align: center;
+    margin: auto auto;
+    background-color: #F08080;
+    color:white;
+    padding: 15px;
+    border: 10px white solid;
+}
+
+input [readonly] {background-color: gray;}

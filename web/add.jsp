@@ -4,10 +4,18 @@
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Add A New Employee</title>
-        <link rel="stylesheet" type="text/css" href="styleadd.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="css/stylesheet.css" media="screen">
     </head>
    
     <body>
+        <div class="wrap">
+        
+            <%@ include file="includes/header.jsp" %>
+            
+            <%@ include file="includes/menu.jsp" %>
+           
+            <div class="main">
+        
         <h1 id="addheader">Add A New Employee</h1>
         
         <div id="addForm">
@@ -15,28 +23,28 @@
   
             <table id="inputTable" align="center">
                 <tbody>
-                    <tr>
-                        <td>First Name:</td>
+                    <tr class="input">
+                        <td class="input">First Name:</td>
                         <td><input type="text" name="firstname" value="" required></td>
                     </tr>
-                    <tr>
-                        <td>Last Name:</td>
+                    <tr class="input">
+                        <td class="input">Last Name:</td>
                         <td><input type="text" name="lastname" value="" required></td>
                     </tr>
-                    <tr>
-                        <td>Email:</td>
+                    <tr class="input">
+                        <td class="input">Email:</td>
                         <td><input type="text" name="email" value=""></td>
                     </tr>
-                    <tr>
-                        <td>Office Location:</td>
+                    <tr class="input">
+                        <td class="input">Office Location:</td>
                         <td><input type="text" name="officelocation" value=""></td>
                     </tr>   
-                    <tr>
-                        <td>Phone:</td>
+                    <tr class="input">
+                        <td class="input">Phone:</td>
                         <td><input type="text" name="phone" value=""></td>
                     </tr>   
-                    <tr>
-                        <td>Years of Experience:</td>
+                    <tr class="input">
+                        <td class="input">Years of Experience:</td>
                         <td><input type="text" name="yearsofexperience" value=""></td>
                     </tr>  
                 </tbody>
@@ -49,5 +57,12 @@
         
         </form> 
         </div>
+        
+        </div><!--close the main div-->
+                
+            <%@ include file="includes/footer.jsp" %>
+
+        </div><!--close the wrap div-->  
+        
     </body>
 </html>

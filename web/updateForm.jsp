@@ -6,10 +6,17 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <link rel="stylesheet" type="text/css" href="styleadd.css" media="screen">
+        <link rel="stylesheet" type="text/css" href="css/stylesheet.css" media="screen">
         <title>Update An Employee</title>
     </head>
     <body>
+        <div class="wrap">
+        
+            <%@ include file="includes/header.jsp" %>
+            
+            <%@ include file="includes/menu.jsp" %>
+           
+            <div class="main">
         <h1 id="updateheader">Update An Employee Record</h1>
         
         <div id="updateForm">
@@ -55,5 +62,12 @@
         
         </form> 
         </div>
+                    
+              </div><!--close the main div-->
+                
+            <%@ include file="includes/footer.jsp" %>
+
+        </div><!--close the wrap div-->   
+        
     </body>
 </html>

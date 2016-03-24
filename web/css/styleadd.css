@@ -22,12 +22,12 @@ body{
     border: 10px white solid;
 }
 
-table{
+#inputTable{
     border-collapse: collapse;
     width:100%;
 }
 
-table tr, td{
+.input{
     padding:15px;
     border: 1px white solid;
 }
