@@ -60,6 +60,7 @@ public class UpdateQuery {
             ps.setString (4,employee.getOfficeLocation());
             ps.setString (5,employee.getPhone());
             ps.setInt (6,employee.getYearsOfExperience());
+            ps.setInt (7,employee.getEmployeeID());
             
             ps.executeUpdate();
         } catch (SQLException ex) {

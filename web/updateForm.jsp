@@ -1,6 +1,6 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@page import ="model.Employees"%>
-<% Employees employee = (Employees) request.getAttribute("employee"); %>
+<% Employees employee = (Employees) request.getAttribute("employee");%>
 
 <!DOCTYPE html>
 <html>
@@ -11,63 +11,63 @@
     </head>
     <body>
         <div class="wrap">
-        
-            <%@ include file="includes/header.jsp" %>
-            
-            <%@ include file="includes/menu.jsp" %>
-           
-            <div class="main">
-        <h1 id="updateheader">Update An Employee Record</h1>
-        
-        <div id="updateForm">
-        <form name="updateForm" action="updateEmployee" method="get">
-  
-            <table id="inputTable" align="center">
-                <tbody>
-                    <tr>
-                        <td>Employee ID:</td>
-                        <td><input type="text" name="employeeID" value="<%= employee.getEmployeeID() %>" readonly /></td>
-                    </tr>
-                    <tr>
-                        <td>First Name:</td>
-                        <td><input type="text" name="firstname" value="<%= employee.getFirstName() %>" /></td>
-                    </tr>
-                    <tr>
-                        <td>Last Name:</td>
-                        <td><input type="text" name="lastname" value="<%= employee.getLastName() %>" /></td>
-                    </tr>
-                    <tr>
-                        <td>Email:</td>
-                        <td><input type="text" name="email" value="<%= employee.getEmail() %>" /></td>
-                    </tr>
-                    <tr>
-                        <td>Office Location:</td>
-                        <td><input type="text" name="officelocation" value="<%= employee.getOfficeLocation() %>" /></td>
-                    </tr>   
-                    <tr>
-                        <td>Phone:</td>
-                        <td><input type="text" name="phone" value="<%= employee.getPhone() %>" /></td>
-                    </tr>   
-                    <tr>
-                        <td>Years of Experience:</td>
-                        <td><input type="text" name="yearsofexperience" value="<%= employee.getYearsOfExperience() %>" /></td>
-                    </tr>  
-                </tbody>
-            </table>
 
-                <div id="botton">
-                    <input type="reset" name="clear" value="Clear"/>
-                    <input type="submit" name="submit" value="Update"/>
+            <%@ include file="includes/header.jsp" %>
+
+            <%@ include file="includes/menu.jsp" %>
+
+            <div class="main">
+                <h1 id="updateheader">Update An Employee Record</h1>
+
+                <div id="updateForm">
+                    <form name="updateForm" action="updateEmployee" method="get">
+
+                        <table id="inputTable" align="center">
+                            <tbody>
+                                <tr>
+                                    <td>Employee ID:</td>
+                                    <td id="primaryKey"><input type="text" name="employeeID" value="<%= employee.getEmployeeID()%>" readonly /></td>
+                                </tr>
+                                <tr>
+                                    <td>First Name:</td>
+                                    <td><input type="text" name="firstname" value="<%= employee.getFirstName()%>" /></td>
+                                </tr>
+                                <tr>
+                                    <td>Last Name:</td>
+                                    <td><input type="text" name="lastname" value="<%= employee.getLastName()%>" /></td>
+                                </tr>
+                                <tr>
+                                    <td>Email:</td>
+                                    <td><input type="text" name="email" value="<%= employee.getEmail()%>" /></td>
+                                </tr>
+                                <tr>
+                                    <td>Office Location:</td>
+                                    <td><input type="text" name="officelocation" value="<%= employee.getOfficeLocation()%>" /></td>
+                                </tr>   
+                                <tr>
+                                    <td>Phone:</td>
+                                    <td><input type="text" name="phone" value="<%= employee.getPhone()%>" /></td>
+                                </tr>   
+                                <tr>
+                                    <td>Years of Experience:</td>
+                                    <td><input type="text" name="yearsofexperience" value="<%= employee.getYearsOfExperience()%>" /></td>
+                                </tr>  
+                            </tbody>
+                        </table>
+
+                        <div id="botton">
+                            <input type="reset" name="clear" value="Clear"/>
+                            <input type="submit" name="submit" value="Update"/>
+                        </div>
+
+                    </form> 
                 </div>
-        
-        </form> 
-        </div>
-                    
-              </div><!--close the main div-->
-                
+
+            </div><!--close the main div-->
+
             <%@ include file="includes/footer.jsp" %>
 
         </div><!--close the wrap div-->   
-        
+
     </body>
 </html>

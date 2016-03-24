@@ -164,4 +164,4 @@ tr:nth-child(odd){
     border: 10px white solid;
 }
 
-input [readonly] {background-color: gray;}
+#primaryKey [readonly] {background-color: gray;}

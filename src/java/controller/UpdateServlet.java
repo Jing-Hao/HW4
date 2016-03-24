@@ -82,6 +82,7 @@ public class UpdateServlet extends HttpServlet {
             int employeeID = Integer.parseInt(request.getParameter("employeeID"));
             String firstName = request.getParameter("firstname");
             String lastName = request.getParameter("lastname");
+            String Email = request.getParameter("email");
             String officeLocation = request.getParameter("officelocation");
             String phone = request.getParameter("phone");
             int yearsOfExperience = Integer.parseInt(request.getParameter("yearsofexperience"));
@@ -90,6 +91,7 @@ public class UpdateServlet extends HttpServlet {
             employee.setEmployeeID(employeeID);
             employee.setFirstName(firstName);
             employee.setLastName(lastName);
+            employee.setEmail(Email);
             employee.setOfficeLocation(officeLocation);
             employee.setPhone(phone);
             employee.setYearsOfExperience(yearsOfExperience);
